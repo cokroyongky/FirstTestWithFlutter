@@ -13,7 +13,18 @@ class HomePage extends StatelessWidget{
           backgroundColor: Colors.red[800],
           leading: Icon(Icons.home),
           title: Text('DW Flutter Basic'),
-        )
+        ),
+
+        body: Container(
+          child: Card(
+            child: Column(
+              children: <Widget>[
+                Image.network('https://flutter.io/images/homepage/header-illustration.png'),
+                Text('Belajar Flutter')
+              ],
+            ),
+          ),
+        ),
       )
     );
   }
